@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Nedson Silva Alfaia">
+	<meta name="description" content="Calculator APP">
+	<meta name="keywords" content="Calculator, App Calculator">
+
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="assets/css/theme-2.css">
+	<link rel="stylesheet" href="assets/css/theme-3.css">
+	<link rel="stylesheet" href="assets/css/mobile.css">
+
+	<title>Frontend Mentor | Calculator app</title>
+</head>
+<body>
+
+	<main>
+		<header>
+				<h1>calc</h1>
+
+				<div class="theme">
+					<p>Theme</p>
+					<span class="alter-theme"></span>
+				</div>
+		</header>
+
+		<div id="result">
+			<div>
+				<p class="error"></p>
+			</div>
+		</div>
+
+		
+		<ol id="calculator">
+			<li class="list-btn">
+				<span>7</span>
+				<span>8</span>
+				<span>9</span>
+				<button onclick="calc.delete()" id="del">DEL</button>
+			</li>
+
+			<li class="list-btn">
+				<span>4</span>
+				<span>5</span>
+				<span>6</span>
+				<span>+</span>
+			</li>
+
+			<li class="list-btn">
+				<span>1</span>
+				<span>2</span>
+				<span>3</span>
+				<span>-</span>
+			</li>
+
+			<li class="list-btn">
+				<span>.</span>
+				<span>0</span>
+				<span>/</span>
+				<span>x</span>
+			</li>
+
+			<li class="list-btn">
+				<button onclick="calc.reset()" class="reset">RESET</button>
+				<button onclick="calc.calculation()">=</button>
+			</li>
+		</ol>
+	</main>
+
+	<footer class="attribution">
+		<p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a></p>
+		<p>Coded by <a href="https://github.com/NedsonSilva" target="_blank">Nedson Silva Alfaia</a></p>
+	</footer>
+
+	<script src="main.js"></script>
+</body>
+</html>
